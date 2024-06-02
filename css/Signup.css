@@ -1,0 +1,276 @@
+/* global attributes */
+*{
+  font-family:system-ui;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+h1{
+  font-family:'Rubik scribble';
+}
+ul{
+  list-style-type: none;
+}
+::selection{
+  background-color:rgb(247, 179, 55);
+}
+/* Navbar */
+body{
+  background-image: url(../img/trees.png);
+}
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 999; 
+  align-items: center;
+  padding: 10px 0px 0px;
+  background-color:#fff; 
+}
+.logo h1{
+  font-size: 50px;
+  font-weight: 700;
+}
+.logo span{
+  font-family:'Rubik scribble' ;
+  font-size: 60px;
+  font-weight: 700;
+}
+.navigation .container{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 85%;
+  margin: auto;
+}
+ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+ul li{
+  padding:25px 15px;
+}
+.logo a{
+  padding:0px;
+}
+
+.navigation{
+  text-align: center;
+  width: 100%;
+}
+.navigation a,#log a{
+  color: #2b2b2a;
+  text-decoration: none;
+  transition: color 1s;
+}
+.navigation a{
+  padding:10px;
+  align-items: center;
+  font-size: 1.1em;
+  font-weight: 900;
+}
+
+.navigation a:hover,#log a:hover{
+  color:#F66B0E;
+}
+#log{
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+}
+#log li{
+  padding: 25px 0px;
+}
+#log a{
+  padding: 5px;
+}
+
+.signup{
+  padding: 150px 0;
+}
+form .container {
+  border: 2px solid rgb(222, 141, 10);
+  background: rgba(105, 105, 105, 0);
+  box-shadow: -3px -3px 7px rgb(255, 119, 0),
+  3px 3px 7px rgb(239, 131, 22);
+  border-radius: 5px;
+  box-shadow: #ec7513;
+  padding: 15px;
+  width: 25%;
+  margin: auto;
+  margin-top: 15px;   
+}
+
+.reg{
+
+  color: rgb(255, 85, 0);
+  /* width: 10% ; */
+  opacity: 0.9;
+  text-align: center;
+  /* margin-left: 670px ; */
+  font-size: larger;
+}
+.btn{
+  text-align: center;
+}
+.body{
+  background-color:#112B3C; 
+  
+}
+.form{
+  /* padding: 60px 0; */
+  border-radius: 5px;
+}
+.name1{
+   display: flex;
+   justify-content: center; 
+}
+.fname,.sname{
+  width: 90% ;
+  margin-right: 1px ;
+}
+#fn{
+  margin-top: 40px;
+}
+
+.date{
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom: 10px;
+}
+
+input[type=text], input[type=password] ,input[type=email],
+input[type=number]
+{
+
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 25px;
+  /* flex-direction: column; */
+  border: none;
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  outline:3px orange solid;
+
+}
+
+.pay{
+  padding-top: 15px;
+  margin-left: 25px;
+  color: white;
+}
+
+.obtion{
+  font-size: xx-small;
+  margin: 5px 0px 5px 25px;
+  color: white;
+}
+
+.registerbtn {
+  background-color: #f28933;
+  color: white;
+  padding: 16px 20px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+  align-items: center;
+  border-radius: 5px;
+
+}
+label{
+  color: white;
+}
+.registerbtn:hover {
+  background-color: #f0730d;
+}
+
+/* blue text color to links */
+a {
+  color: orange;
+  text-decoration: none;
+}
+
+.terms{
+  margin-left: 10px;
+  margin-top: 6px;
+  color: white;
+  font-size: 12px;
+}
+.signin {
+  margin-top: 6px;
+ font-size: small;
+  text-align: center;
+  color: white;
+}
+
+
+/* footer */
+
+
+footer{
+  background-image: url(../img/footer.jpg);
+   width: 100%;
+}
+.footerflex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 50px;
+}
+.footerflex ul{
+  padding: 10px 50px;
+}
+.footerflex li{
+  padding: 30px;
+  color:white;
+  list-style: none;
+  transition: 1s;
+  font-size: larger;
+}
+.footerflex li:hover{
+  color: #F66B0E;
+}
+.socialMedia{
+  display: flex;
+  justify-content: center;
+ padding-right: 50px;
+}
+.socialMedia .fa-brands{
+  font-size: xx-large;
+  padding: 20px 50px;
+  color:#fff;
+  transition: 1s ease-in-out;
+}
+.icon-box{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: 2px solid rgb(222, 141, 10);
+  background: rgba(105, 105, 105, 0);
+  box-shadow: -3px -3px 7px orange,
+  3px 3px 7px orange;
+}
+
+.fa-facebook-f:hover{
+  color: #3B5998;
+}
+.fa-instagram:hover{
+  color: #e15b0d;
+}
+.fa-twitter:hover{
+  color:#55ACEE;
+}
+.fa-youtube:hover{
+  color: red;
+}
+
+
+
